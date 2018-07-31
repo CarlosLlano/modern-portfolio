@@ -3,10 +3,11 @@ $primary-color: #444;
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
-$backgroung-opacity: 0.9;
+$backgroung-opacity: 0.5;
 
-//function
+//function (
 @mixin ease-out {
+    // ease-put - specifies a transition effect with a slow end
     transition: all 0.5s ease-out;
 }
 
