@@ -30,3 +30,29 @@ $backgroung-opacity: 0.5;
         }
     }
 }
+
+// Media Query Mixins
+@mixin mediaSm {
+    //css only applied if screen is 500px or less
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+@mixin mediaMd {
+    //css only applied if screen is 500px or less
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin mediaLg {
+    //css only applied if screen is 500px or less
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+@mixin mediaXL {
+    //css only applied if screen is 500px or less
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
+}
