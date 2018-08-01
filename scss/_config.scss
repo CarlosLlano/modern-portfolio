@@ -31,6 +31,16 @@ $backgroung-opacity: 0.5;
     }
 }
 
+// Set text color
+@function set-text-color($color){
+    @if(lightness($color) > 40){
+        @return black;
+    } 
+    @else{
+        @return white;
+    }
+} 
+
 // Media Query Mixins
 @mixin mediaSm {
     //css only applied if screen is 500px or less
