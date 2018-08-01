@@ -106,6 +106,29 @@ main {
     }
 }
 
+.boxes {
+    display: flex;
+    flex-wrap: wrap; //when they do not fit move the content to other row
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div {
+        font-size: 2rem;
+        border: 3px white solid;
+        padding: 1.5rem 2.5rem; //top bottom 1.5rem left right 2.5rem
+        margin-bottom: 3rem;
+        @include ease-out;
+        &:hover {
+            // padding: 0.5rem 1.5rem;
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            span {
+                color: set-text-color($secondary-color);
+            }
+        }
+    }
+}
 
 .projects {
     display: grid;
@@ -143,6 +166,7 @@ main {
     @extend .btn;
     background: lighten($primary-color, 50);
 }
+
 
 #main-footer {
     text-align: center;
